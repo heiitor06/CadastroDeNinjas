@@ -8,26 +8,28 @@ public class NinjaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String nome;
-    String email;
-    int idade;
 
-    public NinjaModel() {
+    private Long id;
+    private String name;
+    private String email;
+    private int idade;
+
+    public NinjaModel(){
+
     }
 
-    public NinjaModel(String nome, String email, int idade) {
-        this.nome = nome;
+    public NinjaModel(String name, String email, int idade) {
+        this.name = name;
         this.email = email;
         this.idade = idade;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
